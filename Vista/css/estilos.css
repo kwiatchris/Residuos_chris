@@ -1,0 +1,116 @@
+@charset "utf8";
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #666;
+	background: #f2f2f8; 
+	font-size: 1em;
+	line-height: 1.5em;	
+}
+ 
+h1 {
+	font-size: 2.3em;
+	line-height: 1.3em;
+	margin: 15px 0;
+	text-align: center;
+	font-weight: 300;
+}
+ 
+p {
+	margin: 0 0 1.5em 0;
+} 
+/*
+ * Logo
+ */
+#titulo {
+	float: left;
+	padding: 5px 10px 0 0;
+	color: white;
+	text-decoration: none;
+}
+	#titulo:hover {
+		color: #0b76a6;
+	}
+	
+	#titulo .site-name {
+		display: block;
+		font-weight: 700;
+		font-size: 1.2em;
+	}
+	
+	#titulo .site-desc {
+		display: block;
+		font-weight: 300;
+		font-size: 0.8em;
+		color: #999;
+	}
+ 
+/*
+ * Navegación
+ */
+#cabecera {
+	background-color: #333;
+	border: 0px;
+	border-radius: 0px;
+	box-shadow: 1px 2px 9px #888888;
+	margin-bottom: 0px;
+}
+	#cabecera a {
+		color: white;
+	}
+	#cabecera li .dropdown-toggle {
+		background-color: #333;		
+	}
+	#cabecera li .dropdown-menu{
+		background-color: #333;
+	}
+	#cabecera li .dropdown-menu li a:hover {
+		color: #333;
+	}
+
+/*
+Contenido
+*/
+#formularios {
+	
+	width: 30%;
+	min-width: 600px;
+	max-width: 800px;
+	margin: 20px auto;
+	padding: 10px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
+}
+
+ /* MAPA*/
+	#cont-fluid {
+		height: 100%;
+		width: 100%;
+		padding-top: 10px;
+		padding-right: 10px;
+		padding-left: 10px;
+		/*background-color: red;*/
+		margin: 0 auto;
+	}
+	#mapa {
+		height: 600px;
+		border-radius: 4px;
+		float: right;
+		margin-bottom: 10px;
+	}
+
+	#logobt {
+		height: 25px;
+		width: 25px;
+		margin-right: 5px;
+		vertical-align: middle;
+	}/*
+	#panel-izda{
+		height: 800px;
+		width: 250px;
+		float: left;
+	}

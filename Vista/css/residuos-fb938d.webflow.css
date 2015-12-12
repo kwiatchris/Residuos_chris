@@ -1,0 +1,723 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.slider {
+  width: auto;
+  height: 500px;
+}
+
+.section {
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+.section.quees {
+  height: 750px;
+  background-color: #f0faf0;
+}
+
+.section.mapainteractivo {
+  height: 600px;
+  background-color: #f4fbfd;
+}
+
+.section.infoaparato {
+  height: 450px;
+  background-color: #f0faf0;
+}
+
+.section.formulariocontacto {
+  height: 500px;
+  background-color: #f4fbfd;
+}
+
+.section.formulariocontacto.formregistro {
+  height: 800px;
+}
+
+.section.footer {
+  height: 140px;
+  background-color: #f0faf0;
+}
+
+.section.infoproducto {
+  height: 550px;
+  background-color: #0098ff;
+}
+
+.section.comprar {
+  background-color: #baddeb;
+}
+
+.slide1 {
+  background-color: white;
+}
+
+.slide2 {
+  background-color: white;
+}
+
+.slide3 {
+  background-image: url('../images/plano_donostia.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.imagen.quees {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container {
+  padding-left: 0px;
+  list-style-type: disc;
+}
+
+.container_01 {
+  position: absolute;
+  left: 111px;
+  top: 350px;
+  right: -1px;
+  display: inline-block;
+}
+
+.container_slide2 {
+  height: 100%;
+}
+
+.containernavmenu {
+  width: 100%;
+  height: 15%;
+  margin-right: 0px;
+  margin-left: 10%;
+}
+
+.logo {
+  width: 60%;
+  margin-top: -2%;
+  margin-left: 5%;
+  border: 1px solid #1d0e0e;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-image: -webkit-linear-gradient(#003502, #84d8aa 77%);
+  background-image: linear-gradient(#003502, #84d8aa 77%);
+}
+
+.logo.nav2 {
+  width: 61%;
+}
+
+.titulowebnavmenu {
+  width: 25%;
+  margin-top: 3%;
+  margin-right: 0%;
+  float: left;
+  font-family: 'Russo One', sans-serif;
+  font-size: 47px;
+  font-weight: 400;
+}
+
+.brandlogo {
+  width: 10%;
+  height: auto;
+  margin-top: 1%;
+  margin-left: 3%;
+}
+
+.brandlogo.w--current {
+  width: 13%;
+  margin-top: 1%;
+  margin-left: 3%;
+}
+
+.heading2 {
+  display: block;
+  margin: 5% auto;
+  color: #3a665f;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: #00ff0a 3px 3px 0px;
+}
+
+.heading2.verde {
+  font-family: Montserrat, sans-serif;
+  color: black;
+  text-shadow: #baddeb 4px 4px 0px;
+}
+
+.heading2.azul {
+  margin-top: 5%;
+  font-family: Montserrat, sans-serif;
+  color: black;
+  text-shadow: #c5e8ba 3px 3px 0px;
+}
+
+.comofuncionaimage {
+  margin-right: 5%;
+  margin-bottom: 5%;
+  float: left;
+}
+
+.paragraph {
+  margin-top: 5%;
+  margin-bottom: 0%;
+  font-size: 16px;
+}
+
+.paragraph.compraproducto {
+  margin-top: 5%;
+}
+
+.paragraph.compraproducto2 {
+  margin-top: 0%;
+}
+
+.imagenslider {
+  margin-left: 25%;
+  background-color: #0098ff;
+}
+
+.iconslider {
+  color: rgba(0, 0, 0, 0.79);
+}
+
+.navbar {
+  background-color: #f4fbfd;
+}
+
+.bthamburguesa {
+  margin-bottom: 15%;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.79);
+  font-size: 45px;
+}
+
+.linkdesplegable {
+  margin-top: 8%;
+  margin-left: 5%;
+  padding: 2%;
+  font-family: 'Source Code Pro', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.linkdesplegable.w--current {
+  margin-top: 0%;
+}
+
+.linkdesplegable._2 {
+  position: static;
+  display: block;
+  margin-top: 0%;
+  float: none;
+  clear: none;
+  background-color: transparent;
+  color: black;
+  text-align: left;
+}
+
+.linkdesplegable._02 {
+  margin-top: 0%;
+}
+
+.linkdesplegable.home {
+  margin-top: 8%;
+}
+
+.menubutton {
+  margin-top: 1%;
+  margin-right: 3%;
+  padding-right: 18px;
+  background-color: #f4fbfd;
+}
+
+.menubutton.w--open {
+  background-color: transparent;
+}
+
+.col01 {
+  height: 100%;
+  background-image: url('../images/CUBO_SENSOR.gif');
+  background-position: 50% 50%;
+  background-size: 60%;
+  background-repeat: no-repeat;
+}
+
+.col02 {
+  height: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  background-image: url('../images/e-ontzia_dispositivo.png');
+  background-position: 56px 71px;
+  background-size: 372px 364px;
+  background-repeat: no-repeat;
+}
+
+.row_slider2 {
+  height: 100%;
+}
+
+.btndemocomofunciona {
+  display: block;
+  width: 20%;
+  margin-top: 5%;
+  margin-right: 40%;
+  margin-left: 40%;
+  border-radius: 10px;
+  background-color: #0b1e25;
+  font-family: 'Source Code Pro', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.btndemocomofunciona:hover {
+  margin-right: 35%;
+  margin-left: 35%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: #000aff;
+  font-size: 25px;
+}
+
+.linkcomprardescripcion {
+  display: block;
+  margin-top: 5%;
+  margin-right: 40%;
+  margin-left: 40%;
+  border-radius: 10px;
+  background-color: #0b1e25;
+  font-family: 'Source Code Pro', sans-serif;
+  font-size: 100%;
+  font-weight: 700;
+  text-align: center;
+}
+
+.linkcomprardescripcion:hover {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: #000aff;
+  font-size: 25px;
+}
+
+.submitcontacto {
+  display: block;
+  margin-top: 10%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 11px;
+  background-color: #0b1e25;
+  font-family: 'Source Code Pro', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.submitcontacto:hover {
+  background-color: #000aff;
+  font-size: 25px;
+}
+
+.submitcontacto:active {
+  width: 20%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: #a1d490;
+  color: black;
+  font-size: 40px;
+}
+
+.submitcontacto.formregistro:active {
+  width: 34%;
+}
+
+.txtfield {
+  float: left;
+  border-radius: 11px;
+}
+
+.txtfield:hover {
+  background-color: #cbd7e7;
+}
+
+.txtfield:focus {
+  border: 5px solid #022aff;
+  background-color: white;
+}
+
+.fieldlabel {
+  display: block;
+  margin-right: auto;
+  margin-bottom: 1%;
+  float: none;
+  clear: left;
+  font-family: 'Source Code Pro', sans-serif;
+  font-size: 20px;
+}
+
+.btnfooter {
+  margin-top: 3%;
+  margin-right: 8%;
+  float: right;
+  border-radius: 10px;
+  background-color: #0b1e25;
+  font-family: 'Source Code Pro', sans-serif;
+  font-size: 100%;
+  font-weight: 700;
+}
+
+.btnfooter:hover {
+  background-color: #60f;
+  font-size: 18px;
+}
+
+.btnfooter:active {
+  box-shadow: #60f 2px 2px 15px 13px;
+}
+
+.btnfooter.w--current {
+  border-radius: 10px;
+  background-color: #0b1e25;
+  font-family: 'Source Code Pro', sans-serif;
+}
+
+.btnfooter.w--current:hover {
+  background-color: #60f;
+  font-size: 18px;
+}
+
+.btnfooter.w--current:active {
+  border-style: solid;
+  border-color: black;
+  background-color: #60f;
+  box-shadow: #60f 2px 2px 15px 13px;
+}
+
+.btnquees {
+  position: static;
+  width: 35%;
+  height: 10%;
+  margin-left: -16%;
+  border: 10px solid white;
+  border-radius: 60px;
+  background-color: #0b1e25;
+  font-family: 'Source Code Pro', sans-serif;
+  color: white;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+}
+
+.btnquees:hover {
+  border-width: 0px;
+  border-color: #f1f1f1;
+}
+
+.btnquees.w--current:hover {
+  background-color: #000aff;
+}
+
+.btnquees.slider02 {
+  display: block;
+  width: 65%;
+  margin-top: 83%;
+  margin-left: -5%;
+  border: 6px none snow;
+  border-radius: 53px;
+  background-color: #0b1e25;
+  box-shadow: none;
+  opacity: 1;
+  color: white;
+  text-transform: uppercase;
+}
+
+.btnquees.slider02:hover {
+  width: 104%;
+  height: 13%;
+  border-width: 11px;
+  background-color: #000aff;
+}
+
+.btnquees.slider03 {
+  width: 18%;
+  margin-top: 15%;
+  margin-left: 6%;
+  border-style: none;
+}
+
+.btnquees.slider03:hover {
+  width: 19%;
+  height: 12%;
+  background-color: #000aff;
+}
+
+.navmenuopen {
+  width: 37%;
+  height: 100%;
+  background-color: rgba(185, 221, 235, 0.67);
+}
+
+.linkvolver {
+  margin-top: 2%;
+  margin-left: 2%;
+  border-radius: 10px;
+  background-color: #75aee0;
+}
+
+.linkvolver:hover {
+  background-color: #000aff;
+  font-size: 20px;
+}
+
+.imagencompraproducto {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.columnsconfiguration {
+  position: static;
+  display: inline;
+  margin: 0% 21px;
+  padding-top: 15%;
+  padding-left: 0px;
+}
+
+.columnconfiguration {
+  height: 300px;
+  border: 7px solid black;
+}
+
+.columnconfiguration.usuarios {
+  padding-right: 5%;
+  padding-left: 5%;
+  border-width: 0px;
+}
+
+.columnconfiguration.sensores {
+  padding-right: 5%;
+  padding-left: 5%;
+  border-width: 0px;
+}
+
+.columnconfiguration.configglobal {
+  padding-right: 5%;
+  padding-left: 5%;
+  border-width: 0px;
+}
+
+.titlebotonesconfiguracion {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.imagenbotonconfig {
+  display: block;
+  margin-top: 10%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.containerconfig {
+  width: 100%;
+  height: 100%;
+  border: 10px solid black;
+  border-radius: 26px;
+  background-color: transparent;
+}
+
+.contusu {
+  padding-left: 0px;
+}
+
+.divuser {
+  position: relative;
+  width: 250px;
+  height: 88px;
+  margin-bottom: 5px;
+  margin-left: 35px;
+  float: left;
+}
+
+.imguser {
+  position: relative;
+  height: 88px;
+  float: left;
+}
+
+.nombreuser {
+  position: relative;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: auto;
+  margin-left: 5px;
+  padding-left: 0px;
+  float: left;
+  clear: none;
+}
+
+.divsensor {
+  position: relative;
+  width: 250px;
+  height: 88px;
+  margin-bottom: 5px;
+  margin-left: 35px;
+  float: left;
+  clear: none;
+}
+
+.imgsensor {
+  position: relative;
+  height: 88px;
+  float: left;
+}
+
+.nombresensor {
+  position: relative;
+  margin-left: 5px;
+  float: left;
+}
+
+.btnanadir {
+  position: relative;
+  display: inline-block;
+  overflow-x: visible;
+  overflow-y: visible;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  padding: 5px;
+  float: right;
+  clear: none;
+  border-radius: 100%;
+  direction: ltr;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 36px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: none;
+  -webkit-column-count: auto;
+  -moz-column-count: auto;
+  column-count: auto;
+}
+
+.btncheck {
+  margin-left: 0px;
+  padding-left: 15px;
+  text-align: right;
+}
+
+.checkbox {
+  float: none;
+}
+
+.txtcheckbox {
+  position: static;
+  float: none;
+  clear: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.bt {
+  width: 100%;
+  height: 80%;
+  border-radius: 23px;
+  background-color: transparent;
+}
+
+.bt.sensores {
+  background-image: url('../images/wireless-icon-bright-blue.jpg');
+  background-position: 0px 0px;
+  background-size: contain;
+}
+
+.bt.conf {
+  background-image: url('../images/gear-47203_640.png');
+  background-position: 0px 0px;
+  background-size: contain;
+}
+
+.bt.usu {
+  background-image: url('../images/user_91161.jpg');
+  background-position: 0px 0px;
+}
+
+html.w-mod-js *[data-ix="cargando"] {
+  opacity: 0;
+}
+
+@media (max-width: 991px) {
+  .containernavmenu {
+    margin-left: 5%;
+  }
+  .titulowebnavmenu {
+    margin-top: 15px;
+    font-size: 240%;
+  }
+  .bthamburguesa {
+    display: inline-block;
+    overflow-x: visible;
+    overflow-y: visible;
+    margin-left: 0px;
+    padding-left: 0px;
+    clear: none;
+    -webkit-transform: scale(0.89);
+    -ms-transform: scale(0.89);
+    transform: scale(0.89);
+    text-indent: 0px;
+  }
+  .linkdesplegable {
+    font-size: 20px;
+  }
+  .linkdesplegable.w--current {
+    color: #333;
+  }
+  .menubutton {
+    margin-top: 1%;
+    margin-right: 0px;
+  }
+  .linkcomprardescripcion {
+    width: 20%;
+  }
+  .navmenuopen {
+    width: 30%;
+  }
+}
+
+@media (max-width: 767px) {
+  .btnfooter {
+    width: 20%;
+  }
+}
+
+@media (max-width: 479px) {
+  .logo {
+    width: 192%;
+  }
+  .titulowebnavmenu {
+    width: 40%;
+    margin-left: 1px;
+    float: left;
+  }
+  .brandlogo {
+    width: 75px;
+    height: 69px;
+  }
+  .btnquees.slider02 {
+    height: 8%;
+    font-size: 100%;
+  }
+}
+

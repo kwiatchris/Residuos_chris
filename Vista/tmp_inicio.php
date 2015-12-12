@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="es" data-wf-site="5645d29a2a73124134e9dfa2" data-wf-page="5649bbd68b8168f16dcf18e5">
+<head>
+	<title>Inicio trackingapp</title>
+	<link rel="stylesheet" type="text/css" href="http://localhost/Aitor/classes/Ierai/trackingapp/Vista/css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost/Aitor/classes/Ierai/trackingapp/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+	<script type="text/javascript" src="http://localhost/Aitor/classes/Ierai/trackingapp/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="http://localhost/Aitor/classes/Ierai/trackingapp/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://localhost/Aitor/classes/Ierai/trackingapp/js/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/residuos-fb938d.webflow.css">
+</head>
+<body>    
+	<div data-collapse="all" data-animation="over-right" data-duration="400" data-contain="1" data-easing="ease-in" data-easing2="ease-out" class="w-nav navbar">
+    <a href="index.html" class="w-nav-brand brandlogo"><img src="images/create_thumb.png" class="logo nav2">
+    </a>
+    <div class="w-nav-button menubutton">
+      <div class="w-icon-nav-menu bthamburguesa"></div>
+    </div>
+    <div class="w-container containernavmenu">
+      <h1 class="titulowebnavmenu">e-ontzia</h1>
+      <nav role="navigation" class="w-nav-menu navmenuopen"><a href="index.html" class="w-nav-link linkdesplegable">Home</a><a href="tienda.html" class="w-nav-link linkdesplegable _02">Comprar</a><a href="demo.html" class="w-nav-link linkdesplegable _02">Demo</a>
+      </nav>
+    </div>
+  </div>
+
+	<div id="cont-fluid" class="row">
+		
+		<div id="mapa" class="col-xs-12 col-md-12">
+		</div>
+	</div>
+	<div class="navbar navbar-default navbar-fixed-bottom">
+				
+	</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/webflow.js"></script>
+	<script type="text/javascript" src="http://localhost/Aitor/classes/Ierai/trackingapp/Vista/js/maps.js"></script>
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPdLysu0hRqWIOnzLhQXua1POAn7dEFd0&callback=initMap">
+	</script>
+
+</body>
+</html>
