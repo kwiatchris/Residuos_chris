@@ -138,7 +138,7 @@ require_once 'Utils.php';
 			
 			try{
 				//si la cuenta da 0 insertar
-				$sql="SELECT `Latitude`,`Longitude`,`Bario` FROM Dispositivos";			
+				$sql="SELECT `Latitud`,`Longitud`,`Barrio` FROM Dispositivos";			
 				$comando=Conexion::getInstance()->getDb()->prepare($sql);
 				$comando->execute();
 				

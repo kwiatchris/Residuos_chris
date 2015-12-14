@@ -178,17 +178,13 @@
 	$app->get('/getAllPos',function(){
 		require_once 'Modelo/PosicionUsuario.php';
 		require_once 'Modelo/Utils.php';
-		$id_usuario=$_SESSION['id_usuario'];
+		//$id_usuario=$_SESSION['id_usuario'];
 		sleep(2);
 		
 		$resp=array();
 
-		if(!isset($id_usuario)){
-			$resultado=null;
-			Utils::escribeLog("titulo sin valor!!!! [/getAllPos]","debug");
-		}else{
-			$resultado=PosicionUsuario::getPosicionesByUsuario();
-		}
+		
+		$resultado=PosicionUsuario::getPosicionesByUsuario();		
 
 		if(!is_null($resultado)){
 			$resp['estado']="ok";

@@ -117,7 +117,7 @@
 				console.log(data);
 				if(data.estado=="ok"){
 					$.each(data.mensaje,function(i,item){
-						nuevoMarcadorBD(item.latitud,item.longitud,item.titulo,i*150);
+						nuevoMarcadorBD(item.Latitud,item.Longitud,item.Barrio,i*150);
 					})
 				}
 			},

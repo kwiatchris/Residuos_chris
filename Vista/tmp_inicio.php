@@ -3,12 +3,13 @@
 <html lang="es" data-wf-site="5645d29a2a73124134e9dfa2" data-wf-page="5649bbd68b8168f16dcf18e5">
 <head>
 	<title>Inicio trackingapp</title>
-	<link rel="stylesheet" type="text/css" href="http://localhost/Aitor/classes/Ierai/trackingapp/Vista/css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost/Aitor/classes/chris_residuos/Residuos_chris/Vista/css/estilos.css">
+
 	<link rel="stylesheet" type="text/css" href="http://localhost/Aitor/classes/Ierai/trackingapp/css/bootstrap.min.css">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
-	<script type="text/javascript" src="http://localhost/Aitor/classes/Ierai/trackingapp/js/jquery-1.11.3.min.js"></script>
-	<script type="text/javascript" src="http://localhost/Aitor/classes/Ierai/trackingapp/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="http://localhost/Aitor/classes/Ierai/trackingapp/js/angular.min.js"></script>
+	<script type="text/javascript" src="http://localhost/Aitor/classes/chris_residuos/Residuos_chris/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="http://localhost/Aitor/classes/chris_residuos/Residuos_chris/trackingapp/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://localhost/Aitor/classes/chris_residuos/Residuos_chris/trackingapp/js/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/webflow.css">
@@ -38,7 +39,9 @@
 	</div>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/webflow.js"></script>
-	<script type="text/javascript" src="http://localhost/Aitor/classes/Ierai/trackingapp/Vista/js/maps.js"></script>
+	<!--<script type="text/javascript" src="http://localhost/Aitor/classes/Ierai/trackingapp/Vista/js/maps.js"></script>-->
+	<script type="text/javascript" src="http://localhost/Aitor/classes/chris_residuos/Residuos_chris/Vista/js/maps.js"></script>
+
 	<script async defer
 	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPdLysu0hRqWIOnzLhQXua1POAn7dEFd0&callback=initMap">
 	</script>
