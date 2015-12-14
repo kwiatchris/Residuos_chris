@@ -55,6 +55,7 @@
 			$.ajax({
 				type:"POST",
 				//url:"http://localhost/workspace/Servidor/PHP/trackingapp/addPos",
+				
 				url:"http://localhost/Aitor/classes/Ierai/trackingapp/index.php/addPos",
 				//url:"http://192.168.1.7:8080/trackingapp/addPos",
 				dataType:"JSON",
@@ -108,7 +109,8 @@
 	function getPosiciones(){
 		$.ajax({
 			type:"GET",
-			url:"http://localhost/Aitor/classes/Ierai/trackingapp/index.php/getAllPos",
+			url:"http://localhost/Aitor/classes/chris_residuos/Residuos_chris/index.php/getAllPos",
+			//url:"http://localhost/Aitor/classes/Ierai/trackingapp/index.php/getAllPos",
 			//url:"http://localhost/workspace/Servidor/PHP/trackingapp/getAllPos",
 			//url:"http://192.168.1.7:80/trackingapp/getAllPos",
 			dataType:"JSON",
@@ -117,7 +119,7 @@
 				console.log(data);
 				if(data.estado=="ok"){
 					$.each(data.mensaje,function(i,item){
-						nuevoMarcadorBD(item.Latitud,item.Longitud,item.Barrio,i*150);
+						nuevoMarcadorBD(item.Latitude,item.Longitude,item.Bario,i*150);
 					})
 				}
 			},

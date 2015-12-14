@@ -138,12 +138,12 @@ require_once 'Utils.php';
 			
 			try{
 				//si la cuenta da 0 insertar
-				$sql="SELECT `Latitud`,`Longitud`,`Barrio` FROM Dispositivos";			
+				$sql="SELECT `Latitude`,`Longitude`,`Bario` FROM Dispositivos";			
 				$comando=Conexion::getInstance()->getDb()->prepare($sql);
 				$comando->execute();
 				
 			}catch(PDOException $e){
-				Utils::escribeLog("Error: ".$e->getMessage()." | Fichero: ".$e->getFile()." | Línea: ".$e->getLine()." [Error al insertar posicion]","debug");
+				//Utils::escribeLog("Error: ".$e->getMessage()." | Fichero: ".$e->getFile()." | Línea: ".$e->getLine()." [Error al insertar posicion]","debug");
 				$posiciones=null;
 				return $posiciones;
 			}

@@ -5,7 +5,7 @@
 	<title>Inicio trackingapp</title>
 	<link rel="stylesheet" type="text/css" href="http://localhost/Aitor/classes/chris_residuos/Residuos_chris/Vista/css/estilos.css">
 
-	<link rel="stylesheet" type="text/css" href="http://localhost/Aitor/classes/Ierai/trackingapp/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
 	<script type="text/javascript" src="http://localhost/Aitor/classes/chris_residuos/Residuos_chris/js/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="http://localhost/Aitor/classes/chris_residuos/Residuos_chris/trackingapp/js/bootstrap.min.js"></script>
