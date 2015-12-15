@@ -7,9 +7,9 @@
   <title>residuos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="Webflow">
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/webflow.css">
-  <link rel="stylesheet" type="text/css" href="css/residuos-fb938d.webflow.css">
+  <link rel="stylesheet" type="text/css" href="Vista/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="Vista/css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="Vista/css/residuos-fb938d.webflow.css">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
   <script>
     WebFont.load({
@@ -18,20 +18,20 @@
       }
     });
   </script>
-  <script type="text/javascript" src="js/modernizr.js"></script>
+  <script type="text/javascript" src="Vista/js/modernizr.js"></script>
   <link rel="shortcut icon" type="image/x-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/favicon.ico">
   <link rel="apple-touch-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png">
 </head>
 <body>
   <div data-collapse="all" data-animation="over-right" data-duration="400" data-contain="1" data-easing="ease-in" data-easing2="ease-in" class="w-nav navbar">
-    <a href="index.html" class="w-nav-brand brandlogo"><img src="images/create_thumb.png" class="logo">
+    <a href="index.html" class="w-nav-brand brandlogo"><img src="Vista/images/create_thumb.png" class="logo">
     </a>
     <div class="w-nav-button menubutton">
       <div class="w-icon-nav-menu bthamburguesa"></div>
     </div>
     <div class="w-container containernavmenu">
       <h1 class="titulowebnavmenu">e-ontzia</h1>
-      <nav role="navigation" class="w-nav-menu navmenuopen"><a href="index.html" class="w-nav-link linkdesplegable home">Home</a><a href="tienda.html" class="w-nav-link linkdesplegable _2">Comprar</a><a href="tmp_inicio.php" class="w-nav-link linkdesplegable _2">Demo</a><a href="configuration.html" class="w-button linkdesplegable _2">Panel de control</a>
+      <nav role="navigation" class="w-nav-menu navmenuopen"><a href="index.html" class="w-nav-link linkdesplegable home">Home</a><a href="Vista/tienda.html" class="w-nav-link linkdesplegable _2">Comprar</a><a href="Vista/tmp_inicio.php" class="w-nav-link linkdesplegable _2">Demo</a><a href="Vista/configuration.html" class="w-button linkdesplegable _2">Panel de control</a>
       </nav>
     </div>
   </div>
@@ -40,7 +40,7 @@
       <div class="w-slider-mask">
         <div class="w-slide slide1">
           <div class="w-container container_01"><a href="#sectionQueEs" class="w-button btnquees">QUE ES</a>
-          </div><img width="60%" src="images/foto1.png" class="imagenslider">
+          </div><img width="60%" src="Vista/images/foto1.png" class="imagenslider">
         </div>
         <div class="w-slide slide2">
           <div class="w-container container_slide2">
@@ -64,7 +64,7 @@
   </section>
   <section id="sectionQueEs" class="w-section section quees">
     <div data-ix="cargando" class="w-container container_section_02">
-      <h2 class="heading2 verde">¿ QUé ES ?</h2><img width="50%" src="images/56378b57c41f43c75b7c5250_Captura2.PNG" class="imagen quees">
+      <h2 class="heading2 verde">¿ QUé ES ?</h2><img width="50%" src="Vista/images/56378b57c41f43c75b7c5250_Captura2.PNG" class="imagen quees">
       <p class="paragraph">Nuestra solución de&nbsp;<strong>gestión inteligente</strong> de residuos&nbsp;consiste en&nbsp;aplicar tecnología&nbsp;(electrónica y aplicaciones) al sistema de funcionamiento actual, que permita una comunicación bidireccional entre la infraestructura desplegada en la ciudad y los operadores del servicio.
         <br> Nos enfocamos en <strong data-new-link="true">optimizar las</strong>&nbsp;<strong>rutas </strong>de recogida en base a los niveles de llenado de los contenedores.Hoy es posible contar con una logística de residuos inteligente y eficiente a través de:Un sistema embebido y&nbsp;redes de comunicación.
         <br><strong>Información </strong><strong data-new-link="true">en tiempo real</strong>&nbsp;sobre el nivel de llenado de los contenedores
@@ -74,7 +74,7 @@
   </section>
   <section id="sectionComoFunciona" class="w-section section mapainteractivo">
     <div data-ix="cargando" class="w-container container_03">
-      <h1 class="heading2 azul">COMO FUNCIONA</h1><img src="images/SENSOR.jpeg" class="comofuncionaimage">
+      <h1 class="heading2 azul">COMO FUNCIONA</h1><img src="Vista/images/SENSOR.jpeg" class="comofuncionaimage">
       <div class="w-richtext">
         <h4>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Mide la distancia entre el sensor y el interior del contenedor &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h4>
         <h4>Almacena y procesa la información &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h4>
@@ -124,11 +124,11 @@
     </div>
   </section>
   <section id="sectionFooter" class="w-section w-clearfix section footer">
-    <a href="index.html" class="w-nav-brand brandlogo"><img src="images/create_thumb.png" class="logo">
+    <a href="index.html" class="w-nav-brand brandlogo"><img src="Vista/images/create_thumb.png" class="logo">
     </a><a href="#navBar" class="w-button btnfooter">HOME</a><a href="#sectionQueEs" class="w-button btnfooter">QUE ES</a><a href="#sectionComoFunciona" class="w-button btnfooter">COMO FUNCIONA</a><a href="#section4Descripcion" class="w-button btnfooter">DESCRIPCIÓN</a><a href="#section5FormContacto" class="w-button btnfooter">CONTACTO</a>
   </section>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/webflow.js"></script>
+  <script type="text/javascript" src="Vista/js/webflow.js"></script>
   <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
 </body>
 </html>

@@ -56,7 +56,7 @@
 				type:"POST",
 				//url:"http://localhost/workspace/Servidor/PHP/trackingapp/addPos",
 				
-				url:"http://localhost/Aitor/classes/Ierai/trackingapp/index.php/addPos",
+				url:"http://localhost/Aitor/classes/Ierai/trackingapp/addPos",
 				//url:"http://192.168.1.7:8080/trackingapp/addPos",
 				dataType:"JSON",
 				data:datos,
@@ -109,7 +109,7 @@
 	function getPosiciones(){
 		$.ajax({
 			type:"GET",
-			url:"http://localhost/Aitor/classes/chris_residuos/Residuos_chris/index.php/getAllPos",
+			url:"http://localhost/Aitor/classes/chris_residuos/Residuos_chris/getAllPos",
 			//url:"http://localhost/Aitor/classes/Ierai/trackingapp/index.php/getAllPos",
 			//url:"http://localhost/workspace/Servidor/PHP/trackingapp/getAllPos",
 			//url:"http://192.168.1.7:80/trackingapp/getAllPos",
@@ -138,9 +138,9 @@
 	function initMap() {
 		form=$("#formNuevo");
 
-		var punto=new google.maps.LatLng(43.308615, -1.893189);
+		var punto=new google.maps.LatLng(43.317842, -1.981089);
 		var config={
-			zoom:16,
+			zoom:14,
 			center:punto,
 			mapTypeId:google.maps.MapTypeId.ROADMAP
 		};
@@ -168,8 +168,8 @@
 		getPosiciones();
 
 		google.maps.event.addListener(mapa,"click",function(event){
-			var coordenadas=event.latLng.toString();
-			var titulo=prompt("Titulo:")
+			//var coordenadas=event.latLng.toString();
+			//var titulo=prompt("Titulo:")
 			coordenadas=coordenadas.replace("(", "");
 			coordenadas=coordenadas.replace(")", "");
 			var lista=coordenadas.split(",");
@@ -178,13 +178,15 @@
 			form.find("input[name=lat]").val(lista[0]);
 			form.find("input[name=long]").val(lista[1]);
 			nuevoMarcador(lista[0],lista[1],titulo);
-			
-		});
 
-		//Al hacer click en el boton Guardar enviar y guardar en BBDD
-		$("#btnGuardar").click(function(){
-			addPosicion();			
 		});
+		
+				
+
+		//Al hacer click en el boton Guardar enviar y guardar eninfoWindow.open(map,mapa); BBDD
+		/*$("#btnGuardar").click(function(){
+			addPosicion();			
+		});*/
 	}
 
 	

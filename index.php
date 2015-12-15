@@ -17,13 +17,15 @@
 		
 		if(!isset($_SESSION['id_usuario'])){
 			//render login
-			$app->render('tmp_login.php');
+			$app->render('index.php');
 		}
 		else{
 			//enviar al inicio
-			$app->redirect($app->urlFor('PaginaInicio'));			
+			//$app->redirect($app->urlFor('PaginaInicio'));
+			//$app->response->redirect('Vista/index.html');			
 		}	
 	})->via('GET')->name('Inicio');
+
 	 
 	//Login
 	$app-> post('/login',function() use ($app){
