@@ -4,10 +4,13 @@ include_once 'CorreoUser.php';
 require_once 'Utils.php';
  class Usuario{
 	
-	private $mId_Usuario;
+	private $mId_Cliente;
+	private $mNombre_Empresa;
 	private $mNombre;
 	private $mApellido1;
 	private $mApellido2;
+	private $mDireccion;
+	private $mCiudad;
 	private $mEmail;
 	private $mPass;
 	private $mValidado;
@@ -16,10 +19,13 @@ require_once 'Utils.php';
 	//Constructor de la clase
 	public function __construct()
 	{
-		$this->mId_Usuario="";
+		$this->mId_Cliente="";
+		$this->mNombre_Empresa="";
 		$this->mNombre="";
 		$this->mApellido1="";
 		$this->mApellido2="";
+		$this->mDireccion="";
+		$this->mCiudad="";
 		$this->mEmail="";
 		$this->mPass="";
 		$this->mValidado="";
@@ -32,13 +38,21 @@ require_once 'Utils.php';
 	//ID_USUARIO
 	public function setIdUsuario($idUsu)
 	{
-		$this->mId_Usuario=$idUsu;
+		$this->mId_Cliente=$idUsu;
 	}
 	public function getIdUsuario()
 	{
-		return $this->mId_Usuario;
+		return $this->mId_Cliente;
 	}
-
+	//mNombre_Empresa
+	public function setNombre_Empresa($nom_empr)
+	{
+		$this->mNombre_Empresa=$nom_empr;
+	}
+	public function getNombre_Empresa()
+	{
+		return $this->mNombre_Empresa;
+	}
 	//NOMBRE
 	public function setNombreUsuario($nom)
 	{
@@ -69,6 +83,24 @@ require_once 'Utils.php';
 		return $this->mApellido2;
 	}
 
+	//Direccion
+	public function setDireccion($dir)
+	{
+		$this->mDireccion=$dir;
+	}
+	public function getDireccion()
+	{
+		return $this->mDireccion;
+	}	
+	//mCiudad
+		public function setmCiudad($ciud)
+	{
+		$this->mCiudad=$dir;
+	}
+	public function getmCiudad()
+	{
+		return $this->mCiudad;
+	}
 	//EMAIL
 	public function setEmail($email)
 	{

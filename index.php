@@ -26,7 +26,18 @@
 		}	
 	})->via('GET')->name('Inicio');
 
-	 
+	//redirecionar el hamburgesa
+	$app->get('/tienda.html',function() use ($app){
+		$app->render('tienda.html');
+	});
+
+	$app->get('/tmp_inicio.php',function() use ($app){
+		$app->render('tmp_inicio.php');
+	});
+	$app->get('/configuration.html',function() use ($app){
+		$app->render('configuration.html');
+	});
+
 	//Login
 	$app-> post('/login',function() use ($app){
 		require_once 'Modelo/Usuario.php';
@@ -56,9 +67,9 @@
 	//Registro usuario
 	$app->post('/registro',function() use($app){
 		require_once 'Modelo/Usuario.php';
-		require_once 'Modelo/Utils.php';
+		//require_once 'Modelo/Utils.php';
 
-		Utils::escribeLog("Inicio Registro","debug");
+		//Utils::escribeLog("Inicio Registro","debug");
 		
 		$req=$app->request();
 		$id_usuario=$req->post('idUsuario');

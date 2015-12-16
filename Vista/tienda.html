@@ -7,40 +7,61 @@
   <title>TIENDA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="Webflow">
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/webflow.css">
-  <link rel="stylesheet" type="text/css" href="css/residuos-fb938d.webflow.css">
+  <link rel="stylesheet" type="text/css" href="Vista/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="Vista/css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="Vista/css/residuos-fb938d.webflow.css">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+   
   <script>
     WebFont.load({
       google: {
         families: ["Montserrat:400,700","Source Code Pro:200,300,regular,500,600,700,900","Russo One:regular","Special Elite:regular"]
       }
     });
+  $(document).ready(function () {
+
+    $('#email-form').validate({
+        rules: {
+            nombre: {
+                minlength: 2,
+                required: true
+            },
+          
+        },
+        highlight: function (element) {
+            $(element).closest('.w-clearfix').removeClass('success').addClass('error');
+        },
+        success: function (element) {
+            element.text('OK!').addClass('valid')
+                .closest('.w-clearfix').removeClass('error').addClass('success');
+        }
+    });
+
+});
   </script>
-  <script type="text/javascript" src="js/modernizr.js"></script>
+  <script type="text/javascript" src="Vista/js/modernizr.js"></script>
   <link rel="shortcut icon" type="image/x-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/favicon.ico">
   <link rel="apple-touch-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png">
 </head>
 <body>
   <div data-collapse="all" data-animation="over-right" data-duration="400" data-contain="1" data-easing="ease-in" data-easing2="ease-out" class="w-nav navbar">
-    <a href="index.html" class="w-nav-brand brandlogo"><img src="images/create_thumb.png" class="logo nav2">
+    <a href="index.html" class="w-nav-brand brandlogo"><img src="Vista/images/create_thumb.png" class="logo nav2">
     </a>
     <div class="w-nav-button menubutton">
       <div class="w-icon-nav-menu bthamburguesa"></div>
     </div>
     <div class="w-container containernavmenu">
       <h1 class="titulowebnavmenu">e-ontzia</h1>
-      <nav role="navigation" class="w-nav-menu navmenuopen"><a href="index.html" class="w-nav-link linkdesplegable">Home</a><a href="tienda.html" class="w-nav-link linkdesplegable">Comprar</a><a href="demo.html" class="w-nav-link linkdesplegable _02">Demo</a>
+      <nav role="navigation" class="w-nav-menu navmenuopen"><a href="index.php" class="w-nav-link linkdesplegable">Home</a><a href="tienda.html" class="w-nav-link linkdesplegable">Comprar</a><a href="tmp_inicio.php" class="w-nav-link linkdesplegable _02">Demo</a>
       </nav>
     </div>
   </div>
   <section id="sectionQueEs" class="w-section section quees producto">
     <div data-ix="cargando" class="w-container container_section_02">
       <h2 class="heading2 verde">INFORMACIÓN DEL PRODUCTO</h2><img src="https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg" class="imagencompraproducto">
-      <p class="paragraph compraproducto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-      <p class="paragraph compraproducto2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-      <p class="paragraph compraproducto2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+      <p class="paragraph compraproducto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros  quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+      <p class="paragraph compraproducto2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros  quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+      <p class="paragraph compraproducto2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. i quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
     </div>
   </section>
   <section id="section5FormContacto" class="w-section section formulariocontacto formregistro">
@@ -49,19 +70,19 @@
       <div class="w-form">
         <form id="email-form" name="email-form" data-name="Email Form" class="w-clearfix" action="registro" method="post">
           <label for="name-4" class="fieldlabel">NOMBRE DE LE EMPRESA:</label>
-          <input id="name-4" type="text" placeholder="introduce nombre de la empresa" name="name-4" data-name="Name 4" required="required" class="w-input txtfield">
+          <input id="nombre_empresa" type="text" placeholder="introduce nombre de la empresa" name="nombre_empresa" data-name="Name 4" required="required" class="w-input txtfield">
           <label for="name-5" class="fieldlabel">NOMBRE:</label>
-          <input id="name-5" type="text" placeholder="napisz imie" name="name-5" data-name="Name 5" required="required" class="w-input txtfield">
+          <input id="nombre" type="text" placeholder="introduce Nombre" name="nombre" required="required" class="w-input txtfield">
           <label for="email-7" class="fieldlabel">APELLIDO:</label>
-          <input id="email-7" type="email" placeholder="introduce el appelido" name="email-7" data-name="Email 7" required="required" class="w-input txtfield">
+          <input id="appelido" type="text" placeholder="introduce el appelido" name="appelido" data-name="Email 7" required="required" class="w-input txtfield">
           <label for="email-8" class="fieldlabel">CONTRASEÑA:</label>
-          <input id="email-8" type="email" placeholder="introduce la contaseña" name="email-8" data-name="Email 8" required="required" class="w-input txtfield">
+          <input id="contasena" type="text" placeholder="introduce la contaseña" name="contasena" data-name="Email 8" required="required" class="w-input txtfield">
           <label for="email-9" class="fieldlabel">CORREO ELECTRONICO:</label>
-          <input id="email-9" type="email" placeholder="introduce el correo" name="email-9" data-name="Email 9" required="required" class="w-input txtfield">
+          <input id="correo" type="email" placeholder="introduce el correo" name="email-9" data-name="correo" required="required" class="w-input txtfield">
           <label for="email-10" class="fieldlabel">DIRECCION:</label>
-          <input id="email-10" type="email" placeholder="introduce la dirrecion" name="email-10" data-name="Email 10" required="required" class="w-input txtfield">
+          <input id="dirrecion" type="text" placeholder="introduce la dirrecion" name="dirrecion" data-name="Email 10" required="required" class="w-input txtfield">
           <label for="email-11" class="fieldlabel">TELEFONO:</label>
-          <input id="email-11" type="email" placeholder="introduce el telefono" name="email-11" data-name="Email 11" required="required" class="w-input txtfield">
+          <input id="telefono" type="text" placeholder="introduce el telefono" name="telefono" data-name="Email 11" required="required" class="w-input txtfield">
           <input type="submit" value="REGISTRARSE" data-wait="Please wait..." class="w-button submitcontacto formregistro">
         </form>
         <div class="w-form-done">
@@ -74,7 +95,9 @@
     </div>
   </section>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/webflow.js"></script>
+  <script type="text/javascript" src="Vista/js/webflow.js"></script>
+  <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script> 
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
   <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
 </body>
 </html>

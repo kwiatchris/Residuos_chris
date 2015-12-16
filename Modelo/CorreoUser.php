@@ -2,7 +2,7 @@
 
 	require 'class.phpmailer.php';
 	include 'class.smtp.php';
-	include 'keys.php';
+	//include 'keys.php';
 	
 	require_once 'Utils.php';
 	//require '../vendor/phpmailer/PHPMailerAutoLoad.php';

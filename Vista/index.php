@@ -31,7 +31,7 @@
     </div>
     <div class="w-container containernavmenu">
       <h1 class="titulowebnavmenu">e-ontzia</h1>
-      <nav role="navigation" class="w-nav-menu navmenuopen"><a href="index.html" class="w-nav-link linkdesplegable home">Home</a><a href="Vista/tienda.html" class="w-nav-link linkdesplegable _2">Comprar</a><a href="Vista/tmp_inicio.php" class="w-nav-link linkdesplegable _2">Demo</a><a href="Vista/configuration.html" class="w-button linkdesplegable _2">Panel de control</a>
+      <nav role="navigation" class="w-nav-menu navmenuopen"><a href="index.html" class="w-nav-link linkdesplegable home">Home</a><a href="tienda.html" class="w-nav-link linkdesplegable _2">Comprar</a><a href="tmp_inicio.php" class="w-nav-link linkdesplegable _2">Demo</a><a href="configuration.html" class="w-button linkdesplegable _2">Panel de control</a>
       </nav>
     </div>
   </div>
