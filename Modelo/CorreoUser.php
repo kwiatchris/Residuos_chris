@@ -2,7 +2,7 @@
 
 	require 'class.phpmailer.php';
 	include 'class.smtp.php';
-	//include 'keys.php';
+	include 'keys.php';
 	
 	require_once 'Utils.php';
 	//require '../vendor/phpmailer/PHPMailerAutoLoad.php';
@@ -21,10 +21,10 @@
 			$this->pass=PASS;
 		}
 
-		public function enviarCorreoRegistro($idUsuario,$Nombre,$ape1,$ape2="",$correo,$key){
+		public function enviarCorreoRegistro($nom_empresa,$nom,$app,$cont,$email,$key){
 			$retVal=true;
 			Utils::escribeLog("Inicio PHPMailer","debug");
-			$URL=$this->getURL($correo,$key,true);
+			$URL=$this->getURL($email,$key,true);
 			try{
 				$mail = new PHPMailer();
 				$mail->isSMTP();
@@ -40,24 +40,24 @@
 				$mail->SMTPDebug=0;
 				//$mail->Debugoutput = 'html';
 
-				$mail->addAddress($correo,$Nombre);			
+				$mail->addAddress($email,$nom_empresa);			
 				
 				$mail->From=$this->usernameFrom;
-				$mail->FromName='Administrador TrackingApp';
-				$mail->addReplyTo($this->usernameFrom,'Administrador de TrackingApp');
-				$mail->Subject = "Bienvenido a trackingApp";
-				$mail->AltBody = "Mensaje de prueba";
+				$mail->FromName='Administrador E-ONTZIA';
+				$mail->addReplyTo($this->usernameFrom,'Administrador de E-ONTZIA');
+				$mail->Subject = "Bienvenido a E-ONTZIA";
+				$mail->AltBody = "Mensaje de registro";
 				$mail->WordWrap= 50;
 
 				//$urlValidar=getURLValidar($correo,$key);			
 
-				$mensaje="<h1>Bienvenido/a ".$Nombre." ".$ape1;
+				$mensaje="<h1>Bienvenido/a ".$nom." ".$ape;
 				if($ape2!="")
 				{
 					$mensaje.=" ".$ape2;
 				}
-				$mensaje.=' a trackingApp</h1><br/><br/><p>Gracias por incribirse en la app <b>TrackingApp</b></p><br/>
-					<p>Su nombre de usuario: '.$idUsuario.'</p>Su correo: '.$correo.'
+				$mensaje.=' a trackingApp</h1><br/><br/><p>Gracias por incribirse en la app <b>E-ONTZIA</b></p><br/>
+					<p>Su nombre de usuario: '.$nom.'</p>Su correo: '.$email.'
 					<p>Ha sido inscrito correctamente, para poder acceder a la aplicación debe validar su usuario. Para validar, pulse en el siguiente enlace para validar:</p> 
 					<p><a href="'.$URL.'">'.$URL.'</a></p>';
 				$mail->msgHTML($mensaje);

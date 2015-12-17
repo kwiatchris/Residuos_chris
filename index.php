@@ -37,6 +37,9 @@
 	$app->get('/configuration.html',function() use ($app){
 		$app->render('configuration.html');
 	});
+	$app->get('/info.php',function() use ($app){
+		$app->render('info.php');
+	});
 
 	//Login
 	$app-> post('/login',function() use ($app){
@@ -72,14 +75,13 @@
 		//Utils::escribeLog("Inicio Registro","debug");
 		
 		$req=$app->request();
-		$id_usuario=$req->post('idUsuario');
-		$pass=$req->post("pass");
-		$nombre=$req->post("nombre");
-		$ape1=$req->post("ape1");
-		$ape2=$req->post("ape2");
-		$email=$req->post("email");
+		$nom_empresa=$req->post('nombre_empresa');
+		$nom=$req->post("nombre");
+		$app=$req->post("appelido");
+		$cont=$req->post("contasena");
+		$email=$req->post("correo");
 
-		$result=Usuario::nuevoUsuario($id_usuario,$pass,$nombre,$ape1,$ape2,$email);
+		$result=Usuario::nuevoUsuario($nom_empresa,$nom,$app,$cont,$email);
 		//0->KO / 1->OK / 2->Existe el usuario / 3->registro OK correo KO
 		/*Códigos de mensajes= 
 		
