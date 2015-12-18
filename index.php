@@ -27,24 +27,25 @@
 	})->via('GET')->name('Inicio');
 
 	//redirecionar el hamburgesa
-	$app->get('/tienda.html',function() use ($app){
+	$app->get('/tienda',function() use ($app){
 		$app->render('tienda.html');
 	});
 
 	$app->get('/tmp_inicio.php',function() use ($app){
 		$app->render('tmp_inicio.php');
 	});
-	$app->get('/configuration.html',function() use ($app){
+	$app->get('/configuration',function() use ($app){
 		$app->render('configuration.html');
 	});
-	$app->get('/info.php',function() use ($app){
+	$app->get('/info',function() use ($app){
 		$app->render('info.php');
 	});
 
 	//Login
 	$app-> post('/login',function() use ($app){
 		require_once 'Modelo/Usuario.php';
-		
+		$mensaje="val_OK";
+		$app->redirect($app->urlfor('resultado',array('mensaje'=>$mensaje)));
 		$usr=$app->request->post('idUsuario');
 		$pass=$app->request->post('pass');
 
@@ -81,7 +82,7 @@
 		$cont=$req->post("contasena");
 		$email=$req->post("correo");
 
-		$result=Usuario::nuevoUsuario($nom_empresa,$nom,$app,$cont,$email);
+		//$result=Usuario::nuevoUsuario($nom_empresa,$nom,$app,$cont,$email);
 		//0->KO / 1->OK / 2->Existe el usuario / 3->registro OK correo KO
 		/*Códigos de mensajes= 
 		
@@ -97,7 +98,8 @@
 		}else if($result==1){
 			//Utils::escribeLog("OK","debug");
 			$mensaje="usr_reg_OK";
-			$app->redirect($app->urlfor('resultado',array('mensaje'=>$mensaje)));
+			//$app->redirect($app->urlfor('resultado',array('mensaje'=>$mensaje)));
+			$app->redirect($app->urlFor('resultado'));
 		}else if($result==2){
 			//Utils::escribeLog("Existe","debug");
 			$mensaje="usr_em_exist";
@@ -126,19 +128,19 @@
 		if($result==0){
 			//Utils::escribeLog("KO","debug");
 			$mensaje= "err_usr_val";
-			$app->redirect($app->urlfor('resultado',array('mensaje'=>$mensaje)));
+			$app->redirect($app->urlFor('resultado',array('mensaje'=>$mensaje)));
 		}else if($result==1){
 			//Utils::escribeLog("OK","debug");
 			$mensaje="val_OK";
-			$app->redirect($app->urlfor('resultado',array('mensaje'=>$mensaje)));
+			$app->redirect($app->urlFor('resultado',array('mensaje'=>$mensaje)));
 		}	
 		else if($result==2){
 			//Utils::escribeLog("Existe","debug");
 			$mensaje="usr_reg";
-			$app->redirect($app->urlfor('resultado',array('mensaje'=>$mensaje)));
+			$app->redirect($app->urlFor('resultado',array('mensaje'=>$mensaje)));
 		}else{
 			$mensaje="usrv_OK_em_F";
-			$app->redirect($app->urlfor('resultado',array('mensaje'=>$mensaje)));
+			$app->redirect($app->urlFor('resultado',array('mensaje'=>$mensaje)));
 		}
 		
 	 });

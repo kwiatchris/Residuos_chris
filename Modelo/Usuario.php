@@ -207,9 +207,10 @@ require_once 'Utils.php';
 		//Utils::escribeLog("Usuario insertado en la BBDD -> OK","debug");
 		//Utils::escribeLog("Pre-envio correo","debug");
 		//Enviar correo
-		$CorreoUser=new CorreoUser();
-		$result=$CorreoUser->enviarCorreoRegistro($id,$nombre,$ape1,$ape2,$email,$key);
-
+		//$CorreoUse=new CorreoUser();
+		//$result=$CorreoUser->enviarCorreoRegistro($nom_empresa,$nom,$app,$cont,$email,$key);
+		//$result=$CorreoUse->email_confirm($nom_empresa,$key,$email);
+		$result=CorreoUser::email_confirm($nom_empresa,$key,$email);
 		if(!$result){
 			//Utils::escribeLog("Error: ".$e->getMessage()." | Fichero: ".$e->getFile()." | Línea: ".$e->getLine()." [Error al enviar correo]","debug");
 			$retVal=3;
@@ -275,8 +276,8 @@ require_once 'Utils.php';
 		}
 
 		//enviar correo de validado OK
-		$CorreoUser=new CorreoUser();
-		$result=$CorreoUser->enviarConfirmValidacion($nombre,$ape1,$ape2="",$correo);
+		//$CorreoUser=new CorreoUser();
+		//$result=$CorreoUser->enviarConfirmValidacion($nombre,$ape1,$ape2="",$correo);
 
 		if(!$result){
 			//Utils::escribeLog("Error: ".$e->getMessage()." | Fichero: ".$e->getFile()." | Línea: ".$e->getLine()." [Error al enviar correo]","debug");

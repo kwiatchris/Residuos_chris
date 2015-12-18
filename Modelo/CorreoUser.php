@@ -1,6 +1,6 @@
  <?php
 
-	require 'class.phpmailer.php';
+	include 'class.phpmailer.php';
 	include 'class.smtp.php';
 	include 'keys.php';
 	
@@ -74,6 +74,35 @@
 			
 			return $retVal;
 		}
+		public static function email_confirm($nombre,$key,$correo){
+        //$link='"localhost/Aitor/TRACKING%20APP/trackingapp/confirmar.php?email="'.$correo."&key="."$key"';
+        	$retVal=true;
+        	 $mail = new PHPMailer();
+            $mail->isSMTP();
+            $mail->SMTPAuth = true;
+            //$mail->SMTPSecure = "ssl";
+            //$mail->SMTPDebug = 1;
+            $mail->Host = "smtp.gmail.com";
+            $mail->Port = 587;
+            $mail->Username = "residuoszubiri@gmail.com";
+            $mail->Password = "zubiriresiduosdw32";
+            $mail->From = "residuoszubiri@gmail.com";
+            $mail->FromName = "Tracking App";
+            $mail->Subject = "Bienvenido a E-ONTZIA";
+            $mail->AltBody = "Mensaje de prueba";
+            $mail->msgHTML("<h1>Mensaje de Bienvenida</h1><br/><br/><p>
+                Hola <b>".$nombre."</b><br>Gracias por incribirse en la <b>E-ONTZIA</b></p><br/>
+                <p>Debes activar tu cuenta pulsando este enlace 
+                :<a href='http://localhost/Aitor/TRACKING%20APP/trackingapp/confirmar.php?email=".$correo."&key=".$key."'>pulsa aqui para activar la cuenta</a></p>");
+                         //<a href="http://www.w3schools.com">Visit W3Schools</a>
+                        // echo '<td>'."<a href=map.php?action=mapamostrar&datos=".$obj."><input type='button' value=' MAP' ></a>".'</td>';
+                    //echo "<a href='".$link_address."'>Link</a>";
+            $mail->addAddress($correo,$nombre);
+            $mail->isHTML(true);
+            if (!$mail->send()) {
+                echo "Error: ".$mail->ErrorInfo;
+            }
+                   return $retVal; }    
 
 		public function enviarConfirmValidacion($Nombre,$ape1,$ape2="",$correo){
 			$retVal=true;

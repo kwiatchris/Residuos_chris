@@ -1,0 +1,1 @@
+[ Fecha:2015-12-18 09:48:27 | Nav: Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36 | IP: 127.0.0.1 | FILE: /Aitor/classes/chris_residuos/Residuos_chris/index.php | Tipo: debug] Msg: nom_empresa y/o correo  existentes en la BBDD -> KO
