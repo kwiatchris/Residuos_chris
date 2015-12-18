@@ -81,8 +81,10 @@
 		$app=$req->post("appelido");
 		$cont=$req->post("contasena");
 		$email=$req->post("correo");
+		$dirr=$req->post("dirrecion");
+		$tel=$req->post("telefono");
 
-		//$result=Usuario::nuevoUsuario($nom_empresa,$nom,$app,$cont,$email);
+		$result=Usuario::nuevoUsuario($nom_empresa,$nom,$app,$cont,$email,$dirr,$tel);
 		//0->KO / 1->OK / 2->Existe el usuario / 3->registro OK correo KO
 		/*Códigos de mensajes= 
 		
@@ -189,10 +191,11 @@
 		}
 
 		echo json_encode($resp);
+
 	});
 
 	//Traer posiciones del usuario
-	$app->get('/getAllPos',function(){
+	$app->get('/getAllPos',function() use($app){
 		require_once 'Modelo/PosicionUsuario.php';
 		require_once 'Modelo/Utils.php';
 		//$id_usuario=$_SESSION['id_usuario'];
@@ -213,6 +216,7 @@
 		}
 
 		echo json_encode($resp);
+		
 
 	});
 	$app->get('/result/:mensaje',function($mensaje) use($app){

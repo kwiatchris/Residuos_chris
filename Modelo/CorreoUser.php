@@ -21,7 +21,7 @@
 			$this->pass=PASS;
 		}
 
-		public function enviarCorreoRegistro($nom_empresa,$nom,$app,$cont,$email,$key){
+		/*public function enviarCorreoRegistro($nom_empresa,$nom,$app,$cont,$email,$key){
 			$retVal=true;
 			Utils::escribeLog("Inicio PHPMailer","debug");
 			$URL=$this->getURL($email,$key,true);
@@ -73,7 +73,7 @@
 			}
 			
 			return $retVal;
-		}
+		}*/
 		public static function email_confirm($nombre,$key,$correo){
         //$link='"localhost/Aitor/TRACKING%20APP/trackingapp/confirmar.php?email="'.$correo."&key="."$key"';
         	$retVal=true;
@@ -81,11 +81,13 @@
             $mail->isSMTP();
             $mail->SMTPAuth = true;
             //$mail->SMTPSecure = "ssl";
+            //para debufgear SMTP
             //$mail->SMTPDebug = 1;
             $mail->Host = "smtp.gmail.com";
             $mail->Port = 587;
-            $mail->Username = "residuoszubiri@gmail.com";
-            $mail->Password = "zubiriresiduosdw32";
+            //paso los datos desde keys.php
+            $mail->Username = USUARIO;
+			$mail->Password = PASS;
             $mail->From = "residuoszubiri@gmail.com";
             $mail->FromName = "Tracking App";
             $mail->Subject = "Bienvenido a E-ONTZIA";

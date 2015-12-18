@@ -150,12 +150,14 @@ require_once 'Utils.php';
 	//******************************
 	//SECCION INTERACCIÓN CON BBDD *
 	//******************************
-	public static function nuevoUsuario($nom_empresa,$nom,$app,$cont,$email){
+	public static function nuevoUsuario($nom_empresa,$nom,$app,$cont,$email,$dirr,$tel){
 
 		//return $this->getIdUsuario();
 		$retVal=1;//0->KO / 1->OK / 2->Existe el usuario/3-> Usuario insertado correo KO
 		//Utils::escribeLog("Inicio nuevoUsuario","debug");
-
+		 $timezone = date_default_timezone_get();
+         $date = date('m/d/Y h:i:s a', time());
+         $date = date('Y-m-d H:i:s');
 		try{
 			//Antes de insertar comprobar que no exista el mismo id_usuario y correo
 			$sql="SELECT Client_Id FROM Clientes WHERE Nombre_empresa=:nom_emp or Email=:ema";
@@ -179,8 +181,9 @@ require_once 'Utils.php';
 		//Utils::escribeLog("IdUsuario y/o correo no existentes en la BBDD -> OK","debug");
 		try{
 			//si la cuenta da 0 insertar
-			$sql="INSERT INTO Clientes(Nombre_empresa,Nombre,Apelido,Password,Email)VALUES
-			(:nom_empresa,:nombre,:ape,:contra,:email)";
+			$sql="INSERT INTO Clientes(Nombre_empresa,Nombre,Apelido,Password,Email,Direccion,Telefono,Fecha_crear)VALUES
+			(:nom_empresa,:nombre,:ape,:contra,:email,:dir,:tel,:fecha)";
+			//INSERT INTO `Clientes`(`Client_Id`, `Nombre`, `Apelido`, `Password`, `Direccion`, `Ciudad`, `Telefono`, `Email`, `Comprado`, `User_key`, `Fecha_creacion`, `otra`, `NIF`, `fecha_modif`)
 			$key=Utils::random_string(50);
 			$comando=null;
 			$comando=Conexion::getInstance()->getDb()->prepare($sql);
@@ -189,6 +192,9 @@ require_once 'Utils.php';
 				":ape"=>$app,
 				":contra"=>md5($cont),
 				":email"=>$email,
+				":dir"=>$dirr,
+				":tel"=>$tel,
+				":fecha"=>$date,
 				));
 
 		}catch(PDOException $e){
