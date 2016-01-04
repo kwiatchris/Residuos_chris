@@ -17,14 +17,14 @@
 </head>
 <body>    
 	<div data-collapse="all" data-animation="over-right" data-duration="400" data-contain="1" data-easing="ease-in" data-easing2="ease-out" class="w-nav navbar">
-    <a href="index.html" class="w-nav-brand brandlogo"><img src="Vista/images/create_thumb.png" class="logo nav2">
+    <a href="index.php" class="w-nav-brand brandlogo"><img src="Vista/images/create_thumb.png" class="logo nav2">
     </a>
     <div class="w-nav-button menubutton">
       <div class="w-icon-nav-menu bthamburguesa"></div>
     </div>
     <div class="w-container containernavmenu">
       <h1 class="titulowebnavmenu">e-ontzia</h1>
-      <nav role="navigation" class="w-nav-menu navmenuopen"><a href="index.php" class="w-nav-link linkdesplegable">Home</a><a href="tienda.html" class="w-nav-link linkdesplegable _02">Comprar</a><a href="demo.html" class="w-nav-link linkdesplegable _02">Demo</a>
+      <nav role="navigation" class="w-nav-menu navmenuopen"><a href="index.php" class="w-nav-link linkdesplegable">Home</a><a href="tienda" class="w-nav-link linkdesplegable _02">Comprar</a><a href="demo" class="w-nav-link linkdesplegable _02">Demo</a>
       </nav>
     </div>
   </div>

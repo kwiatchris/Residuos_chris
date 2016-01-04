@@ -24,14 +24,14 @@
 </head>
 <body>
   <div data-collapse="all" data-animation="over-right" data-duration="400" data-contain="1" data-easing="ease-in" data-easing2="ease-in" class="w-nav navbar">
-    <a href="index.html" class="w-nav-brand brandlogo"><img src="Vista/images/create_thumb.png" class="logo">
+    <a href="index.php" class="w-nav-brand brandlogo"><img src="Vista/images/create_thumb.png" class="logo">
     </a>
     <div class="w-nav-button menubutton">
       <div class="w-icon-nav-menu bthamburguesa"></div>
     </div>
     <div class="w-container containernavmenu">
       <h1 class="titulowebnavmenu">e-ontzia</h1>
-      <nav role="navigation" class="w-nav-menu navmenuopen"><a href="index.html" class="w-nav-link linkdesplegable home">Home</a><a href="tienda.html" class="w-nav-link linkdesplegable _2">Comprar</a><a href="tmp_inicio.php" class="w-nav-link linkdesplegable _2">Demo</a><a href="configuration.html" class="w-button linkdesplegable _2">Panel de control</a>
+      <nav role="navigation" class="w-nav-menu navmenuopen"><a href="index" class="w-nav-link linkdesplegable home">Home</a><a href="tienda" class="w-nav-link linkdesplegable _2">Comprar</a><a href="tmp_inicio.php" class="w-nav-link linkdesplegable _2">Demo</a><a href="configuration" class="w-button linkdesplegable _2">Panel de control</a>
       </nav>
     </div>
   </div>
